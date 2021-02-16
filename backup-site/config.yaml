@@ -1,0 +1,14 @@
+remote:
+  ssh:
+    hostname: "site.pl:22"
+    username: "root"
+    keypath: "id_rsa"
+  backup:
+    script_path: "/root/backup/run.sh"
+    destination: "/tmp"
+    prefix: "backup*"
+local:
+  backup_destination: "/root/backup/"
+
+aws_bucket_name: "website-backups"
+slack__webhook: "https://hooks.slack.com/services/XXX/YYY/ZZZ"
